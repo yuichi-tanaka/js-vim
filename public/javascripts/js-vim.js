@@ -1,5 +1,9 @@
 console.log('js_vim');
-var js_vim = {};
+var js_vim = {
+};
+js_vim.MODE_INERT = 'insert';
+js_vim.MODE_VIEW = 'view';
+js_vim.MODE_COMMAND= 'commnad';
 
 
 // debugger
@@ -24,9 +28,11 @@ var key_code = function(e){
   debug(e.shiftKey);
   debug(e.ctrlKey);
   debug(e.altKey);
-
 };
 // end key_code
+
+var get_mode = function(){
+}
 
 //create layout
 
